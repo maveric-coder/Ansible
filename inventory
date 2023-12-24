@@ -1,3 +1,8 @@
+[web_servers]
 node1@10.0.0.5
+
+[db_servers]
 node2@10.0.0.6
+
+[file_servers]
 node3@10.0.0.7
