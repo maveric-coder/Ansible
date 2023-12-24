@@ -6,3 +6,7 @@ node2@10.0.0.6
 
 [file_servers]
 node3@10.0.0.7
+
+[workstations]
+work@10.0.0.8
+nick@10.0.0.4
