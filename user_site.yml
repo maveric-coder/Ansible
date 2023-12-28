@@ -4,45 +4,29 @@
   become: true
   pre_tasks:
   
-  - name: install updates (RedHat)
+  - name: update repo cache (RedHat)
     tags: always
     yum:
-      update_only: yes
       update_cache: yes
+    changed_when: fasle
     when: ansible_distribution == "RedHat"
 
-  - name: install updates (Ubuntu)
+  - name: update repo cache (Ubuntu)
     tags: always
     apt:
-      upgrade: dist
       update_cache: yes
+    changed_when: false
     when: ansible_distribution == "Ubuntu"
 
 - hosts: all
   become: true
   tasks:
-
-    - name: create yaay user
-      tags: always
-      user:
-        name: yaay
-        groups: root
         
     - name: add ssh key for user yaay
       tags: always
       authorized_key:
         user: yaay
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHeTITklu0rKLiAmDRF+5ZKs2Ed1vhqnu2J9RHgGRQ4c ansible"
-
-    - name: add sudoers file for user yaay
-      tags: always
-      copy:
-        src: sudoer_yaay
-        dest: /etc/sudoers.d/yaay
-        owner: root
-        group: root
-        mode: 0440
-
 
 - hosts: workstations
   become: true
