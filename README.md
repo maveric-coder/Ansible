@@ -22,3 +22,11 @@ copy the user_site.yml to bootstrap.yml and remove the user part from user_site 
 
 remove update_only: and upgrade: from user_site.yml
 and add changed_when: false on same level as when
+
+### for roles:
+1. copy the existing playbook for backup
+2. define all the reoles in the user_site.yml playbook
+3. create a directory named roles and create sub-directories for each roles
+4. make new directory named tasks inside each directories inside roles
+5. now swith to tasks dir inside base directory and create main.yml aka taskbook
+6. 
