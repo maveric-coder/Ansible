@@ -44,3 +44,5 @@ and add changed_when: false on same level as when
 4. .j2 jinja2 format for templates in ansible
 5. scp node3@10.0.0.7:/etc/ssh/sshd_config sshd_config_RedHad.j2
 6. AllowUsers {{ ssh_users }} add this line in the copied files
+[node3@node3 ~]$ sudo chmod a+r /etc/ssh/sshd_config 
+[node3@node3 ~]$ sudo chmod o-r /etc/ssh/sshd_config 
