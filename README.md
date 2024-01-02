@@ -35,3 +35,14 @@ and add changed_when: false on same level as when
 ### Host variables and Handlers
 1. create a new dir host_vars
 2. create host variable file node1@10.0.0.5.yml ...
+
+
+### template 
+1. /etc/ssh/sshd_config - default apth for ssh
+2. copy this file to roles/base/tasks
+3. create template folder and copy the file inside this folder
+4. .j2 jinja2 format for templates in ansible
+5. scp node3@10.0.0.7:/etc/ssh/sshd_config sshd_config_RedHad.j2
+6. AllowUsers {{ ssh_users }} add this line in the copied files
+[node3@node3 ~]$ sudo chmod a+r /etc/ssh/sshd_config 
+[node3@node3 ~]$ sudo chmod o-r /etc/ssh/sshd_config 
