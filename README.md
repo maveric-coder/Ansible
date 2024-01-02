@@ -28,5 +28,10 @@ and add changed_when: false on same level as when
 2. define all the reoles in the user_site.yml playbook
 3. create a directory named roles and create sub-directories for each roles
 4. make new directory named tasks inside each directories inside roles
-5. now swith to tasks dir inside base directory and create main.yml aka taskbook
-6. 
+5. now switch to tasks dir inside base directory and create main.yml aka taskbook
+6. copy the default_site.html from root file dir to roles/web_servers/files dir
+
+
+### Host variables and Handlers
+1. create a new dir host_vars
+2. create host variable file node1@10.0.0.5.yml ...
