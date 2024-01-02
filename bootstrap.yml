@@ -32,7 +32,8 @@
       tags: always
       authorized_key:
         user: yaay
-        key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHeTITklu0rKLiAmDRF+5ZKs2Ed1vhqnu2J9RHgGRQ4c ansible"
+        key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINEnnEDW7dDa1uPgmQKTDkDe6vZuZy5q5yXO8m2jUN3s ansible"
+
 
     - name: add sudoers file for user yaay
       tags: always
