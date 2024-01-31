@@ -3,6 +3,8 @@ Ansible is an open source IT automation platform from Red Hat. <br>
 It enables organizations to automate many IT processes usually performed manually, including provisioning, configuration management, application deployment and orchestration.
 <br>It is designed for IT professionals who require it for app deployment, system integration, in-service coordination, and anything else that an IT admin or network manager routinely accomplishes. Sys admins and developers would be unable to keep up if they had to manage everything manually in today’s IT environments, which are usually too complex and often have to expand too quickly.
 
+<img src = "/files/ansible_flow.gif">
+
 ## How Does Ansible Work?
 Ansible interacts with networks and sends little programs, known as modules, to them.<br>
 These modules are utilized to complete automated tasks as systems designed to be resource models for the functioning at the desired state.<br>
